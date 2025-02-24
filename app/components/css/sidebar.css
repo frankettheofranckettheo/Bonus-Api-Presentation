@@ -1,0 +1,23 @@
+/* Cache la scrollbar par défaut */
+.sidebar-container {
+    overflow-y: auto; /* Active le défilement */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent transparent; /* Firefox */
+  }
+  
+  /* Pour les navigateurs basés sur Webkit (Chrome, Edge, etc.) */
+  .sidebar-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Cache la scrollbar */
+  .sidebar-container::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  /* Montre la scrollbar au survol */
+  .sidebar-container:hover::-webkit-scrollbar-thumb {
+    background: #888; /* Couleur de la scrollbar */
+    border-radius: 4px;
+  }
+  
